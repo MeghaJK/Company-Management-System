@@ -1,0 +1,91 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Company Departments</title>
+</head>
+<style>
+input[type=text], select {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid green;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 30%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+}
+</style>
+
+<body background="36588097-business-wallpaper.jpg">
+
+<div>
+<center>
+<h1 style="color:blue;">Department Details:</h1><br>
+<form name="Form1"  method="post" action="department.jsp">
+
+
+ <label for="di" style="color:black;"><b>Department ID:</b></label><br>
+    <input type="text" id="di" name="di" placeholder="Enter Department ID" required>
+    <br><br>
+
+<label for="ei" style="color:black;"><b>Employee ID:</b></label><br>
+ <input type="text" id="ei" name="ei" placeholder="Enter Employee ID..." required>
+ <br><br>
+ 
+ <B>Employee's Department Name:</B><br>
+<select name="da" size="1">
+<option value="Service Department">Service Department</option>
+<option value="Supply chain Management Department">Supply chain Management Department</option>
+<option value="Production & Quality Assurance Department">Production & Quality Assurance Department</option>
+<option value="Finance Department">Finance Department</option>
+<option value="IT Department">IT Department</option>
+</select>
+<br><br>
+ 
+ <label for="ds" style="color:black;"><b>Employee's Designation:</b></label><br>
+ <input type="text" id="ds" name="ds" placeholder="Enter Employee's post..."required>
+ <br><br>
+ 
+ <label for="dp" style="color:black;"><b>Department phone number:</b></label><br>
+ <input type="text" id="dp" name="dp"  pattern="[1-9]{1}[0-9]{9}" title="Please enter the 10 digits" placeholder="Enter number of department..." required>
+ <br><br>
+ 
+ <label for="de" style="color:black;"><b> Department Mail:</b></label><br>
+ <input type="text" id="de" name="de" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Please Enter valid mail-id" placeholder="Enter department mail..." required>
+ <br><br>
+ 
+
+
+<input type=submit value="Submit">
+</center>
+</form> <br>
+</div>
+<center>
+<h2><a href="homepage.html"><b style="color:red">GO BACK</b></a></h2>
+</center>
+</body>
+</html>
