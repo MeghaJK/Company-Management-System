@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>LEAVE DETAILS</title>
+</head>
+<style>
+body
+{
+background-size:cover;
+}
+input[type=text], select {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid green;
+    border-radius: 4px;
+    box-sizing: 2px;
+}
+
+input[type=date], select {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid green;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+input[type=submit] {
+    width: 30%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+}
+</style>
+
+<body background="leave-of-absence.jpg">
+
+<div>
+<center>
+<h1 style="color:blue;">LEAVE MANAGEMENT:</h1><br>
+<form name="Form1"  method="post" action="leave_details.jsp">
+
+<label for="li" style="color:black;"><b>Leave ID:</b></label><br>
+    <input type="text" id="li" name="li" placeholder="Enter Leave ID" required>
+    <br><br>
+
+<label for="ei" style="color:black;"><b>Employee Id:</b></label><br>
+ <input type="text" id="ei" name="ei" placeholder="Enter Employee's Id..." required>
+ <br><br>
+ 
+ <label for="fd" style="color:black;"><b>From Date:</b></label><br>
+ <input type="date" id="fd" name="fd" placeholder="Enter From Date..." required>
+ <br><br>
+ 
+ <label for="td" style="color:black;"><b>To Date:</b></label><br>
+ <input type="date" id="td" name="td" placeholder="Enter To Date..." required>
+ <br><br>
+ 
+ <label for="rs" style="color:black;"><b>Reason:</b></label><br>
+ <input type="text" id="rs" name="rs" placeholder="Enter Reason..." required>
+ <br><br>
+
+<label for="ds" style="color:black;"><b>days:</b></label><br>
+ <input type="text" id="ds" name="ds" placeholder="Enter Number of Days..." required>
+ <br><br>
+ </center>
+ 
+
+
+<center>
+<input type=submit value="Submit">
+</center>
+</form> <br>
+</div>
+<center>
+<h2><a href="homepage.html"><b style="color:red">GO BACK</b></a></h2>
+</center>
+</body>
+</html>
