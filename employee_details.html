@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Employee Registration</title>
+</head>
+<style>
+input[type=text], select {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid green;
+    border-radius: 4px;
+    box-sizing: 2px;
+}
+
+input[type=date], select {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid green;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+input[type=submit] {
+    width: 30%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+}
+</style>
+
+<body background="indian_employees.jpg">
+
+<div>
+<center>
+<h1 style="color:blue;">Employee Registration:</h1>
+<form name="Form1"  method="post" action="employee_details.jsp">
+
+ <label for="ei" style="color:black;"><b>Employee ID:</b></label><br>
+    <input type="text" id="ei" name="ei" placeholder="Enter Employee ID" required>
+    <br><br>
+
+<label for="en" style="color:black;"><b>Employee's Name:</b></label><br>
+ <input type="text" id="en" name="en"  pattern="[a-zA-Z]{1,}" title="Please enter the vaild name" placeholder="Enter Employee's name..." required>
+ <br><br>
+ 
+ <label for="ed" style="color:black;"><b>Employee's Designation:</b></label><br>
+ <input type="text" id="ed" name="ed" placeholder="Enter Employee's post..." required>
+ <br><br>
+ 
+ <label for="ep" style="color:black;"><b>Employee's phone no:</b></label><br>
+ <input type="text" id="ep" name="ep" pattern="[1-9]{1}[0-9]{9}" title="Please enter the 10 digits" placeholder="Enter Employee's phone no..." required>
+ <br><br>
+
+<label for="ea" style="color:black;"><b>Employee's Address:</b></label><br>
+ <input type="text" id="ea" name="ea" placeholder="Enter Employee's address..." required>
+ <br><br>
+ 
+ <label for="em" style="color:black;"><b>Employee's mail-id:</b></label><br>
+ <input type="text" id="em" name="em" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Please Enter valid mail-id" placeholder="Enter Employee's mail-id..." required>
+ <br><br>
+ 
+<B>Gender:</B><br>
+<select name="gn" size="1" >
+<option value="Male">Male</option>
+<option value="Female">Female</option>
+<option value="Other">Other</option>
+</select>
+</center>
+<br><br>
+
+<center>
+<input type=submit value="Submit">
+</center>
+</form> <br>
+</div>
+<center>
+
+<h2><a href="homepage.html"><b style="color:red">GO BACK</b></a></h2>
+</center>
+</body>
+</html>
