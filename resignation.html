@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>RESIGNATION DETAILS</title>
+</head>
+<style>
+input[type=text], select {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid green;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 30%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+}
+body
+{
+background-size:cover;
+}
+</style>
+
+<body background="Resignation_letter.jpg">
+<center>
+<div>
+<h1 style="color:blue;">RESIGNATION DETAILS:</h1><br>
+<form name="Form1"  method="post" action="resignation.jsp">
+
+
+ <label for="ri" style="color:black;"><b>Resignation ID:</b></label><br>
+    <input type="text" id="ri" name="ri" placeholder="Enter Resignation ID" required>
+    <br><br>
+
+<label for="ei" style="color:black;"><b>Employee ID:</b></label><br>
+ <input type="text" id="ei" name="ei" placeholder="Enter Employee ID..." required>
+ <br><br>
+ 
+ 
+ 
+ <label for="en" style="color:black;"><b>Employee Name</b></label><br>
+ <input type="text" id="en" name="en" pattern="[a-zA-Z]{1,}" title="Please enter the vaild name" placeholder="Enter Employee Name..."required>
+ <br><br>
+ 
+ <label for="rd" style="color:black;"><b>Resignation Date:</b></label><br>
+ <input type="text" id="rd" name="rd" placeholder="Enter date of resignation..." required>
+ <br><br>
+ 
+ <label for="rea" style="color:black;"><b> Reason:</b></label><br>
+ <input type="text" id="rea" name="rea" placeholder="Reason for resignation..." required>
+ <br><br>
+ 
+</center>
+
+
+<center>
+<input type=submit value="Submit">
+</center>
+</form> <br>
+</div>
+<center>
+<h2><a href="homepage.html"><b style="color:red">GO BACK</b></a></h2>
+</center>
+</body>
+</html>
